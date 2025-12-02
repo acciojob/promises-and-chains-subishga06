@@ -1,13 +1,39 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voting Eligibility Form</title>
 
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 40px;
+    }
+    form {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
 
-  <body>
-    <!-- write the body here -->
+<body>
+  <h2>Check Voting Eligibility</h2>
 
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+  <form id="form">
+    <input type="number" id="age" placeholder="Enter age" />
+    <input type="text" id="name" placeholder="Enter name" />
+    <button id="btn" type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
 </html>
